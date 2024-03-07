@@ -1,31 +1,22 @@
 <!DOCTYPE html>
-<head>
-    <link rel="stylesheet" href="../CSS/style.css">
-</head>
-<div class="main">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Page</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+    </head>
+    <body>
+        <div class="main">
+            <form action="">
+                <label for="first">Username:</label>
+                <input type="text" id="first" name="first" class="label-input" placeholder="Username" required><br>
 
-    <form action="">
-        <label for="first">
-              Username:
-          </label>
-        <input type="text"
-               id="first"
-               name="first"
-               placeholder="Enter your Username" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="label-input" placeholder="Password" required>
 
-        <label for="password">
-              Password:
-          </label>
-        <input type="password"
-               id="password"
-               name="password"
-               placeholder="Enter your Password" required>
-
-        <div class="wrap">
-            <button type="submit"
-                    >
-                Login
-            </button>
+                <button type="submit">Login</button>
+            </form>
         </div>
-    </form>
-
+    </body>
+</html>
