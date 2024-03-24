@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "0t1zKwO8/CiQwoR8grHKNsGVlUmWBY7kSeEhWB1GLGM=",
+  "Hash": "4PK3EqSoMYyHs2lFCJOuKiO8vRRIrYu2cJu5Js3T4hE=",
   "Source": "razorPage",
   "BasePath": "_content/razorPage",
   "Mode": "Default",
@@ -117,6 +117,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "C:\\Users\\gokay\\Desktop\\Ceng 382\\razorPage\\wwwroot\\js\\toggleElements.js",
+      "SourceId": "razorPage",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gokay\\Desktop\\Ceng 382\\razorPage\\wwwroot\\",
+      "BasePath": "_content/razorPage",
+      "RelativePath": "js/toggleElements.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\toggleElements.js"
     },
     {
       "Identity": "C:\\Users\\gokay\\Desktop\\Ceng 382\\razorPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",

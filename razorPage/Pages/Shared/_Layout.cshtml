@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/razorPage.styles.css" asp-append-version="true" />
+
 </head>
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
@@ -36,54 +37,56 @@
         <p class="fs-5 text-body-secondary">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.</p>
         </div>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+        <div class="container">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+        <footer class="pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+            <div class="col-12 col-md">
+                <img class="mb-2" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
+                <small class="d-block mb-3 text-body-secondary">&copy; 2017–2024</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Features</h5>
+                <ul class="list-unstyled text-small">
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+                <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+                </ul>
+            </div>
+            </div>
+        </footer>
 
-   <footer class="pt-4 my-md-5 pt-md-5 border-top">
-        <div class="row">
-        <div class="col-12 col-md">
-            <img class="mb-2" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
-            <small class="d-block mb-3 text-body-secondary">&copy; 2017–2024</small>
-        </div>
-        <div class="col-6 col-md">
-            <h5>Features</h5>
-            <ul class="list-unstyled text-small">
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
-            </ul>
-        </div>
-        <div class="col-6 col-md">
-            <h5>Resources</h5>
-            <ul class="list-unstyled text-small">
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
-            </ul>
-        </div>
-        <div class="col-6 col-md">
-            <h5>About</h5>
-            <ul class="list-unstyled text-small">
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
-            <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
-            </ul>
-        </div>
-        </div>
-    </footer>
+
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script src="~/js/color-modes.js"></script>
+    <script src="~/js/toggleElements.js"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

@@ -1,10 +1,11 @@
 ﻿@page
-@model lab5Model
+@model MyApp.Namespace.lab5Model
 @{
     ViewData["Title"] = "Home page";
 }
-
+<button id="toggleButton" class="btn btn-primary">Toggle Elements</button>
 <main>
+  <div class="all main">
     <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
       <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
@@ -114,4 +115,19 @@
         </tbody>
       </table>
     </div>
-  </main>
+  </div>
+  <div class="container main" style="display:none;">
+    <form id="calculationForm">
+      <div class="mb-3">
+        <label for="input1" class="form-label">First Number</label>
+        <input type="number" class="form-control" id="input1">
+      </div>
+      <div class="mb-3">
+        <label for="input2" class="form-label">Second Number</label>
+        <input type="number" class="form-control" id="input2">
+      </div>
+      <button type="button" id="calculateButton" class="btn btn-primary">Calculate Sum</button>
+    </form>
+    <div id="result" class="mt-3"></div>
+  </div>
+</main>
