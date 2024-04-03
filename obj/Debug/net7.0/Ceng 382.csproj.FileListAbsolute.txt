@@ -1,0 +1,15 @@
+C:\Users\gokay\Desktop\Ceng 382\obj\Debug\net7.0\Ceng 382.csproj.AssemblyReference.cache
+C:\Users\gokay\Desktop\Ceng 382\obj\Debug\net7.0\Ceng 382.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gokay\Desktop\Ceng 382\obj\Debug\net7.0\Ceng 382.AssemblyInfoInputs.cache
+C:\Users\gokay\Desktop\Ceng 382\obj\Debug\net7.0\Ceng 382.AssemblyInfo.cs
+C:\Users\gokay\Desktop\Ceng 382\obj\Debug\net7.0\Ceng 382.csproj.CoreCompileInputs.cache
+C:\Users\gokay\Desktop\Ceng 382\bin\Debug\net7.0\Ceng 382.exe
+C:\Users\gokay\Desktop\Ceng 382\bin\Debug\net7.0\Ceng 382.deps.json
+C:\Users\gokay\Desktop\Ceng 382\bin\Debug\net7.0\Ceng 382.runtimeconfig.json
+C:\Users\gokay\Desktop\Ceng 382\bin\Debug\net7.0\Ceng 382.dll
+C:\Users\gokay\Desktop\Ceng 382\bin\Debug\net7.0\Ceng 382.pdb
+C:\Users\gokay\Desktop\Ceng 382\obj\Debug\net7.0\Ceng 382.dll
+C:\Users\gokay\Desktop\Ceng 382\obj\Debug\net7.0\refint\Ceng 382.dll
+C:\Users\gokay\Desktop\Ceng 382\obj\Debug\net7.0\Ceng 382.pdb
+C:\Users\gokay\Desktop\Ceng 382\obj\Debug\net7.0\Ceng 382.genruntimeconfig.cache
+C:\Users\gokay\Desktop\Ceng 382\obj\Debug\net7.0\ref\Ceng 382.dll
