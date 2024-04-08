@@ -1,11 +1,11 @@
 using System;
 
-public class Reservation
+public record Reservation
 {
-    public Room Room { get; set; }
-    public int Time { get; set; }
-    public int Date { get; set; }
-    public string ReserverName { get; set; }
+    public Room Room { get; init; }
+    public int Time { get; init; }
+    public int Date { get; init; }
+    public string ReserverName { get; init; }
     //string[,] Reservations = new string[7, 10];
     
     public Reservation(Room room, int time, int date, string reserverName)

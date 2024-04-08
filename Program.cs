@@ -2,20 +2,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-public class RoomData
-{
-    [JsonPropertyName("Room")]
-    public required Room[] Rooms {get; set;}
-}
-public class Room
-{
-    [JsonPropertyName("roomId")]
-    public required string roomId {get; set;}
-    [JsonPropertyName("roomName")]
-    public required string roomName {get; set;}
-    [JsonPropertyName("capacity")]
-    public required int Capacity {get; set;}
-}
+
 
 class Program
 {
