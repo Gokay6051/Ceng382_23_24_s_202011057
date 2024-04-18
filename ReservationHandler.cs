@@ -1,5 +1,8 @@
 public class ReservationHandler
 {
+    private IReservationRepository _reservationRepository;
+    private LogHandler _logHandler;
+    private RoomHandler _roomHandler;
     private Reservation[,] reservations;
 
     public ReservationHandler(int rows, int cols)
@@ -37,4 +40,14 @@ public class ReservationHandler
     {   
         TableHelper.PrintTable(reservations);
     }
+
+    public List<Reservation> GetAllReservations() {
+        return null;
+    }    
+    public List<Room> GetRooms (){
+        return null;
+    }
+    
+    //RoomData da parametre olarak kullanılabilir
+    public void SaveRooms (List<Room> rooms){}
 }
