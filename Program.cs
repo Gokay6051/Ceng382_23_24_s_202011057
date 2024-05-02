@@ -1,48 +1,25 @@
-﻿/*
-    According to the Single Responsibility Principle, week 6 classes are weak, these are multi-task classes. At lab 7, we will    
-*/
+var builder = WebApplication.CreateBuilder(args);
 
-using System;
-using System.Text.Json;
-using System.Text.Json.Serialization;
+// Add services to the container.
+builder.Services.AddRazorPages();
 
+var app = builder.Build();
 
-
-class Program
+// Configure the HTTP request pipeline.
+if (!app.Environment.IsDevelopment())
 {
-    static int Main(string[]args)
-    {
-        
-        //define file path
-        string filePath = "Data.json";
-
-        //Read from json
-        //1 -> json to text // todo try catch
-        string jsonString = File.ReadAllText(filePath);
-
-        //2 -> decode text
-        var RoomData = JsonSerializer.Deserialize<RoomData>(jsonString, new JsonSerializerOptions()
-        {
-            NumberHandling = JsonNumberHandling.AllowReadingFromString | JsonNumberHandling.WriteAsString
-        });
-        
-        ReservationHandler Reservations = new ReservationHandler(7, 10);
-
-        //Adding reservations
-        TableHelper.CreateReservations(ref Reservations, ref RoomData);
-
-        
-        TableHelper.ViewReservations(ref Reservations);
-
-        TableHelper.DeleteReservation(ref Reservations);
-
-        Console.WriteLine("");
-        Console.WriteLine("");
-        Console.WriteLine("After deleted some reservations");
-        Console.WriteLine("");
-        Console.WriteLine("");
-
-        TableHelper.ViewReservations(ref Reservations);
-        return 0;
-    }
+    app.UseExceptionHandler("/Error");
+    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    app.UseHsts();
 }
+
+app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+app.UseRouting();
+
+app.UseAuthorization();
+
+app.MapRazorPages();
+
+app.Run();
