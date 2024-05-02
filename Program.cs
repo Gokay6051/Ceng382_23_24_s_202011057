@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*
+    According to the Single Responsibility Principle, week 6 classes are weak, these are multi-task classes. At lab 7, we will    
+*/
+
+using System;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
