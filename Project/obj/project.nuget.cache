@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IxhDT0Iy8OJW7dMKkHSag6q7K7UV5tENyK2iyPLOpWc50P/0rg7xtW9rV8dNeWAKEgI9Nl27ii5rpas523tiSw==",
+  "dgSpecHash": "Z/WiA8r1zmbKzDFM2DFQlu5MdWnuHhp+bIEy8TOt6i6zPOiG4uAtwE9+uWNZuy4UawAiVg0qEhxJUMMH3HtggA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gokay\\Desktop\\Ceng 382\\Project\\Project.csproj",
+  "projectFilePath": "C:\\Users\\gokay\\Desktop\\Ceng 382\\project\\Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gokay\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\gokay\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

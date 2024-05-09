@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gokay\\Desktop\\Ceng 382\\Project\\Project.csproj": {}
+    "C:\\Users\\gokay\\Desktop\\Ceng 382\\project\\Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gokay\\Desktop\\Ceng 382\\Project\\Project.csproj": {
+    "C:\\Users\\gokay\\Desktop\\Ceng 382\\project\\Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gokay\\Desktop\\Ceng 382\\Project\\Project.csproj",
+        "projectUniqueName": "C:\\Users\\gokay\\Desktop\\Ceng 382\\project\\Project.csproj",
         "projectName": "Project",
-        "projectPath": "C:\\Users\\gokay\\Desktop\\Ceng 382\\Project\\Project.csproj",
+        "projectPath": "C:\\Users\\gokay\\Desktop\\Ceng 382\\project\\Project.csproj",
         "packagesPath": "C:\\Users\\gokay\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gokay\\Desktop\\Ceng 382\\Project\\obj\\",
+        "outputPath": "C:\\Users\\gokay\\Desktop\\Ceng 382\\project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
