@@ -1,9 +1,12 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using WebApp1.Data;
 
 namespace Project.Pages
 {
+    [Authorize]
     public class CreateRoomModel : PageModel
     {
         private readonly ILogger<CreateRoomModel> _logger;
