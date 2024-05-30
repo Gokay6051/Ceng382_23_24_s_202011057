@@ -3,8 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using WebApp1.Data;
+using WebApp1.Models;
 
-namespace Project.Pages
+namespace WebApp1.Pages
 {
     [Authorize]
     public class CreateRoomModel : PageModel

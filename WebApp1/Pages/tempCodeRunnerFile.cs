@@ -1,0 +1,1 @@
+_logger.LogInformation("Reservation created by {User} for room {RoomId} at {DateTime}", user.UserName, Reservation.RoomId, Reservation.DateTime);

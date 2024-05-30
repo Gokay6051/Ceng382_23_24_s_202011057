@@ -1,0 +1,30 @@
+@page "{id:int}"
+@using WebApp1.Pages
+@model EditModel
+@{
+    ViewData["Title"] = "Edit Reservation";
+}
+
+<h1>Edit Reservation</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Reservation.RoomId" class="control-label">Room</label>
+        <select asp-for="Reservation.RoomId" class="form-control" asp-items="Model.Rooms">
+            <option value="">Select a room</option>
+        </select>
+        <span asp-validation-for="Reservation.RoomId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Reservation.DateTime"></label>
+        <input asp-for="Reservation.DateTime" class="form-control" />
+        <span asp-validation-for="Reservation.DateTime" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PersonCount" class="control-label">Person Count</label>
+        <input asp-for="PersonCount" class="form-control" type="number" />
+        <span asp-validation-for="PersonCount" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>

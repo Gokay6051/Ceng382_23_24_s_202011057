@@ -1,8 +1,75 @@
 ﻿@page
+@using WebApp1.Pages
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Weekly Schedule";
 }
 
-<div class="text-center">
+<h2>Weekly Schedule</h2>
+
+<div class="table-responsive">
+    <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Time</th>
+                @for (var i = 0; i < 7; i++)
+                {
+                    <th>@Model.StartOfWeek.AddDays(i).ToString("ddd, MMM d")</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @for (var hour = 0; hour < 24; hour++)
+            {
+                <tr>
+                    <td>@hour:00</td>
+                    @for (var day = 0; day < 7; day++)
+                    {
+                        var cellReservations = Model.Reservations
+                            .Where(r => r.DateTime.Date == Model.StartOfWeek.AddDays(day) && r.DateTime.Hour == hour)
+                            .ToList();
+                        <td>
+                            @if (cellReservations.Any())
+                            {
+                                @foreach (var reservation in cellReservations)
+                                {
+                                    <div class="reservation-cell">
+                                        <span class="reservation-info">@reservation.Room.RoomName (@reservation.DateTime.ToShortTimeString())</span>
+                                        <a asp-page="./Edit" asp-route-id="@reservation.Id" class="btn btn-sm btn-warning">Edit</a>
+                                        <a asp-page="./Delete" asp-route-id="@reservation.Id" class="btn btn-sm btn-danger">Delete</a>
+                                    </div>
+                                }
+                            }
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>
+
+<div>
+    <a asp-page="./SearchReservations" class="btn btn-primary">Search Reservations</a>
+</div>
+
+<style>
+    .table-responsive {
+        overflow-x: auto;
+    }
+    .reservation-cell {
+        margin-bottom: 5px;
+        padding: 5px;
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 4px;
+    }
+    .reservation-info {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .table th, .table td {
+        vertical-align: middle;
+        text-align: center;
+        white-space: nowrap;
+    }
+</style>

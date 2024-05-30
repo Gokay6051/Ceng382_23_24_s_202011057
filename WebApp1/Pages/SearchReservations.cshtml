@@ -1,0 +1,66 @@
+@page
+@using WebApp1.Pages
+@model SearchReservationsModel
+@{
+    ViewData["Title"] = "Search Reservations";
+}
+
+<h2>Search Reservations</h2>
+
+<div>
+    <form method="get">
+        <div class="form-group">
+            <label for="RoomFilter">Filter by Room:</label>
+            <select id="RoomFilter" asp-for="RoomFilter" class="form-control" asp-items="Model.Rooms">
+                <option value="">Select a room</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="StartDate">Start Date:</label>
+            <input type="date" asp-for="StartDate" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="EndDate">End Date:</label>
+            <input type="date" asp-for="EndDate" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="CapacityFilter">Filter by Capacity:</label>
+            <input type="number" asp-for="CapacityFilter" class="form-control" />
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary">Filter</button>
+        <br>
+    </form>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Room</th>
+            <th>Date and Time</th>
+            <th>Reserved By</th>
+            <th>Capacity</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var reservation in Model.Reservations)
+        {
+            <tr>
+                <td>@reservation.Room.RoomName</td>
+                <td>@reservation.DateTime</td>
+                <td>@reservation.ReservedBy</td>
+                <td>@reservation.Room.Capacity</td>
+                <td>
+                    <td><a asp-page="./Edit" asp-route-id="@reservation.Id">Edit</a></td>
+                     &nbsp
+                    <td><a asp-page="./Delete" asp-route-id="@reservation.Id">Delete</a></td>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    <a asp-page="./Index" class="btn btn-secondary">Back to Weekly Schedule</a>
+</div>

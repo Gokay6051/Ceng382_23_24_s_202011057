@@ -12,7 +12,7 @@ using WebApp1.Data;
 namespace WebApp1.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240528190952_InitialCreate")]
+    [Migration("20240528201856_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -227,7 +227,7 @@ namespace WebApp1.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Reservation", b =>
+            modelBuilder.Entity("WebApp1.Models.Reservation", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -252,7 +252,7 @@ namespace WebApp1.Migrations
                     b.ToTable("Reservations");
                 });
 
-            modelBuilder.Entity("Room", b =>
+            modelBuilder.Entity("WebApp1.Models.Room", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -323,15 +323,15 @@ namespace WebApp1.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Reservation", b =>
+            modelBuilder.Entity("WebApp1.Models.Reservation", b =>
                 {
-                    b.HasOne("Room", "room")
+                    b.HasOne("WebApp1.Models.Room", "Room")
                         .WithMany()
                         .HasForeignKey("RoomId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("room");
+                    b.Navigation("Room");
                 });
 #pragma warning restore 612, 618
         }

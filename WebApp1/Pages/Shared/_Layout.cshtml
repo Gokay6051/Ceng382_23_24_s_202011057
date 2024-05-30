@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/WebApp1.styles.css" asp-append-version="true" />
+    <style>
+        body {
+            background-image: url('https://papers.co/wallpaper/papers.co-sl96-soft-blue-pastel-blur-gradation-29-wallpaper.jpg'); /* Arka plan resminin yolunu buraya yazın */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -19,9 +28,6 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
